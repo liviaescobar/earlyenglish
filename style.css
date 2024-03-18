@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 93.75vw;
+    height: 11vh;
+}
+
+.logo img {
+    width:13.542vw;
+    height:12vh;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+nav ul {
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #252641;
+    text-decoration: none;
+}
+
+
+.botoes_cadastroelogin button {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 8.177vw;
+    height: 4.6vh;
+    font-size: 15px;
+}
+
+#cadastro{
+    border: none;
+    color: #F7FFC7;
+    background-color: #F28E29;
+}
+
+#login{
+    border: none;
+    color: #F7FFC7;
+    background-color: #76AADE;
+}
+
+#cadastro:hover{
+    border-color: #F28E29;
+    color: #F7FFC7;
+    background-color: #76AADE;
+}
+
+#login:hover{
+    border: none;
+    color: #F7FFC7;
+    background-color: #F28E29;
+}
+
