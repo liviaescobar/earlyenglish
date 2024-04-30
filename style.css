@@ -101,7 +101,7 @@ nav ul li a {
 .form-container{
     display: flex;
     justify-content: space-around;
-    padding: 80px 100px;
+    padding: 90px 100px;
     font-size: 20px;
 }
 
@@ -167,7 +167,7 @@ button[type=submit]{
 .form-container_login{
     display: flex;
     justify-content: space-around;
-    padding: 80px 100px;
+    padding: 160px 100px;
     font-size: 20px;
 
     input[type="email"],
@@ -194,11 +194,6 @@ button[type=submit]{
         font-size: 20px;
         margin-top: 20px;
     }
-}
-
-.login{
-    
-
 }
 
 .cadastrar_login{
