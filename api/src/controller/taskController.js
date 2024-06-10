@@ -9,7 +9,7 @@ async function storeTask(request, response){
         request.body.description
     );
     console.log(params);
-    const query = "INSERT INTO tasks(nome, email) VALUES(?,?)";
+    const query = "INSERT INTO tasks(title, description) VALUES(?,?)";
     
     connection.query(query, params, (err, results) => {
 
