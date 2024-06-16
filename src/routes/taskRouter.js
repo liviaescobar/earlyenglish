@@ -5,4 +5,4 @@ const { storeTask } = require('../controller/taskController');
 
 router.post('/store/task', storeTask);
 
-module.exports = router; 
+module.exports = router;  

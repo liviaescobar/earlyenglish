@@ -1,4 +1,3 @@
-const { listenerCount } = require("process");
 
 let button = document.getElementById("handleSubmit");
 
@@ -16,7 +15,7 @@ button.onclick = async function(){
     let content = await response.json();
 
     if(content.succes){
-        alert("Sucesso")
+        alert("Sucesso!")
     } else {
         alert("Não");
     }

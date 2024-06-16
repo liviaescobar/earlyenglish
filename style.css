@@ -7,7 +7,8 @@
     --cinza: #444B59;
     --amarelinho: #F7FFC7;
     --branco: #FFFFFF;
-
+    --verdeagua: #46C1AD;
+    --rosa: #FFEBEB;
 }
   
 
@@ -109,14 +110,12 @@ nav ul li a {
     width: 500px;
     height: 70px;
     margin-top: 15px;
-    
 }
 
 #facalogin{
     text-decoration: none;
     color: var(--azul_claro);
     font-weight: 600;
-
 }
 
 .imagem_cadastro img{
@@ -139,7 +138,6 @@ input[type="password"],
         box-sizing: border-box;
     }
 
-
 label{
     margin-bottom: 7px;
     padding: 4px;
@@ -159,7 +157,6 @@ button[type=submit]{
 
 .possuirconta{
     text-align: center
-
 }
 
 /* ---------- login --------- */
@@ -225,3 +222,58 @@ label{
     text-align: center
 }
 
+/* ----------------------- blog ---------------- */
+.posts {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.quadro {
+    background-color: var(--rosa);
+    border: 4px solid var(--verdeagua);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.conteudo{
+    text-align: justify;
+}
+
+.postar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+}
+
+.postar label, .postar input {
+    margin-bottom: 10px;
+}
+.postar button {
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#enviar{
+    background-color: #e9aa6c;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-color: #e9aa6c ;
+    border-radius: 15px;
+    margin-left: 10px;
+    height: 5h;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 550;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
