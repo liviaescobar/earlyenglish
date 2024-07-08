@@ -11,3 +11,15 @@ create table blog(
 );
 
 select * from blog;
+
+CREATE TABLE users(
+	id int not null auto_increment primary key, 
+    name varchar(255) not null,  
+    email varchar (255) not null unique,
+    sexo enum ('masculino', 'feminino'),
+    password varchar (255) not null,
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp
+    );
+    
+SELECT * from users;
