@@ -10,7 +10,7 @@ async function storeUser(request, response) {
         request.body.password
     );
 
-    const query = "INSERT INTO users(name, email, sexo password) VALUES (?,?,?)";
+    const query = "INSERT INTO users(name, email, sexo, password) VALUES (?,?,?,?)";
 
     connection.query(query, params, (err, results) => {
         if (results) {
