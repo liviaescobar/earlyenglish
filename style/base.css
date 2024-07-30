@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+    --laranja: #F28E29;
+    --azul_escuro: #252641;
+    --azul_claro: #76AADE;
+    --cinza: #444B59;
+    --amarelinho: #F7FFC7;
+    --branco: #FFFFFF;
+    --verdeagua: #46C1AD;
+    --rosa: #FFEBEB;
+}
+  
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* ------------- header ------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 93.75vw;
+    height: 11vh;
+}
+
+.logo img {
+    width:11.500vw;
+    height:11vh;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+nav ul {
+    font-weight: 550;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 90px;
+}
+
+nav ul li a {
+    color: var(--azul_escuro);
+    text-decoration: none;
+}
+
+.home{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.botoes_cadastroelogin button {
+    background-color: var(--branco);
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 4.6vh;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.botoes_cadastroelogin button a{
+    text-decoration: none;
+    color: var(--amarelinho);
+}
+
+#cadastro{
+    border: none;
+    background-color: var(--laranja);
+}
+
+#login{
+    border: none;
+    background-color: var(--azul_claro);
+}
+
+#cadastro:hover{
+    border-color: var(--laranja);
+    color: var(--amarelinho);
+    background-color: var(--azul_claro);
+}
+
+#login:hover{
+    border: none;
+    color: var(--amarelinho);
+    background-color: var(--laranja);
+}
+

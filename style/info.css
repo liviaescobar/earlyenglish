@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+.informacoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.informacoes {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFD1A3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes h1 {
+    text-align: center;
+    color: #ff7f0e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    border-top: 1px solid #ccc;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.accordion-button {
+    width: calc(100% - 50px);
+    text-align: left;
+    background-color: #ff7f0e;
+    color: #fff;
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.accordion-button:hover {
+    background-color: #e66c0a;
+}
+
+.accordion-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ff7f0e;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.accordion-toggle:hover {
+    background-color: #e66c0a;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.accordion-content p {
+    margin: 0;
+}

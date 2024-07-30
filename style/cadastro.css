@@ -1,0 +1,59 @@
+.form-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 100px;
+    font-size: 20px;
+}
+
+.cadastrar{
+    width: 500px;
+    height: 70px;
+    margin-top: 15px;
+}
+
+#facalogin{
+    text-decoration: none;
+    color: var(--azul_claro);
+    font-weight: 600;
+}
+
+.imagem_cadastro img{
+    width: 30vw;
+    height: 70vh;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+    select,
+    textarea {
+        border: 2px solid var(--azul_claro);
+        border-radius: 30px;
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 30px; 
+        width: 31vw; 
+        box-sizing: border-box;
+    }
+
+label{
+    margin-bottom: 7px;
+    padding: 4px;
+    font-weight: 450;
+    color: var(--cinza);
+}
+
+button[type=button]{
+    color: var(--branco);
+    background-color: var(--azul_claro);
+    border: none;
+    border-radius: 40px;
+    width: 31vw;
+    height: 4.5vh;
+    font-size: 20px;
+}
+
+.possuirconta{
+    text-align: center
+}
