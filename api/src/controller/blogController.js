@@ -8,7 +8,6 @@ async function storeBlog(request, response){
         request.body.autor,
         request.body.conteudo
     );
-    // console.log(params);
     const query = "INSERT INTO blog(titulo, autor, conteudo) VALUES(?, ?, ?)";
     
     connection.query(query, params, (err, results) => {
