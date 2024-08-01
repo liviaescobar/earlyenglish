@@ -20,3 +20,4 @@ button.onclick = async function(){
         alert("Não");
     }
 }
+
