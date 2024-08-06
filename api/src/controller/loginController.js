@@ -6,8 +6,9 @@ async function login(request, response) {
     const query = "SELECT name, email, sexo, password, id, created_at FROM users WHERE email = ?"
 
     connection.query(query, email, (err, results) => {
+        console.log(err, results)
         if(results.length > 0) {
-            const password = request.body.password;
+            const password = request.body.senha;
             const passwordQuery = results[0].password;
 
             if(password === passwordQuery) {
@@ -18,6 +19,7 @@ async function login(request, response) {
                     message: "Sucesso",
                     data: results
                 })
+                
         
             } else {
                 response
