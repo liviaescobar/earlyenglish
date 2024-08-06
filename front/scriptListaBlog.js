@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    const response = await fetch('http://localhost:3000/api/get/blog');
+    const response = await fetch('http://localhost:3005/api/get/blog');
     const result = await response.json();
 
     if(result.success){

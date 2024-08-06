@@ -19,7 +19,10 @@ let button = document.getElementById("cadastre");
         if(result.success) {
             console.log(result.data);
             alert(result.message);
+            window.location.href = "login.html";
         } else {
             alert(result.message);
         }
     }
+
+    

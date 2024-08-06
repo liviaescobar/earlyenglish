@@ -1,8 +1,9 @@
-.form-container_login{
+.form-container_login {
     display: flex;
     justify-content: space-around;
     padding: 160px 100px;
     font-size: 20px;
+}
 
 input[type="email"],
 input[type="password"],
@@ -12,49 +13,54 @@ textarea {
     border-radius: 30px;
     font-size: 15px;
     padding: 10px;
-    margin-bottom: 30px; 
     width: 31vw; 
     height: 8vh;
     box-sizing: border-box;
-    }
-
-    #entrar{
-        color: var(--branco);
-        background-color: var(--azul_claro);
-        border: none;
-        border-radius: 40px;
-        width: 31vw;
-        height: 7vh;
-        font-size: 20px;
-        margin-top: 20px;
-    }
 }
 
-.cadastrar_login{
+input[type="email"] {
+    margin-bottom: 0px; /* Ajuste este valor conforme necessário */
+}
+
+input[type="password"] {
+    margin-top: 7px; /* Ajuste este valor conforme necessário */
+}
+
+#entrar {
+    color: var(--branco);
+    background-color: var(--azul_claro);
+    border: none;
+    border-radius: 40px;
+    width: 31vw;
+    height: 7vh;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.cadastrar_login {
     width: 500px;
     height: 70px;
     margin-top: 15px;
 }
 
-#facacadastro{
+#facacadastro {
     text-decoration: none;
     color: var(--azul_claro);
     font-weight: 600;
 }
 
-.imagem_cadastro img{
+.imagem_cadastro img {
     width: 30vw;
     height: 70vh;
 }
 
-
-label{
+label {
     margin-bottom: 7px;
     padding: 4px;
     font-weight: 450;
     color: var(--cinza);
 }
 
-.possuirconta{
-    text-align: center
+.possuirconta {
+    text-align: center;
 }

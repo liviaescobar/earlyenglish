@@ -1,15 +1,17 @@
-document.querySelectorAll('.accordion-toggle').forEach(toggle => {
-    toggle.addEventListener('click', () => {
-        const content = toggle.parentElement.querySelector('.accordion-content');
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.acordeao .item');
 
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-            toggle.classList.remove('rotate');
-        } else {
-            document.querySelectorAll('.accordion-content').forEach(content => content.style.display = 'none');
-            document.querySelectorAll('.accordion-toggle').forEach(toggle => toggle.classList.remove('rotate'));
-            content.style.display = 'block';
-            toggle.classList.add('rotate');
-        }
+    items.forEach(item => {
+        const tituloinfo = item.querySelector('.tituloinfo');
+        tituloinfo.addEventListener('click', () => {
+            const assunto = item.querySelector('.assunto');
+            const isOpen = assunto.style.display === 'block';
+
+            document.querySelectorAll('.acordeao .assunto').forEach(c => c.style.display = 'none');
+            
+            if (!isOpen) {
+                assunto.style.display = 'block';
+            }
+        });
     });
 });
