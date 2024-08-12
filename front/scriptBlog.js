@@ -1,5 +1,12 @@
 let button = document.getElementById("enviar");
 
+//evento de onload 
+//pega o login do localstorage
+//se o login for admin, nada acontece
+//se o login for normal, vai pegar o form pelo id e colocar display none
+//se n tiver ninguem logado retorna pro login 
+
+
 button.onclick = async function() {
     let titulo = document.getElementById("titulo").value;
     let autor = document.getElementById("autor").value;
