@@ -1,10 +1,32 @@
 let button = document.getElementById("enviar");
 
+window.onload = function() {
+    let login = localStorage.getItem("login");
+
+    console.log("Valor de login no localStorage:", login);
+
+
+    if (login === "admin") {
+        // Não faz nada, o admin pode ver o formulário
+        window.location.href = "blog.html"; 
+    } else if (login === "normal") {
+        // Esconde o formulário para usuários normais
+        let form = document.getElementById("formPosts"); 
+        form.style.display = "none"
+        window.location.href = "blog.html"; 
+        
+    } else {
+        // Redireciona para a página de login se ninguém estiver logado
+        window.location.href = "login.html"; 
+    }
+};
+
 //evento de onload 
 //pega o login do localstorage
 //se o login for admin, nada acontece
 //se o login for normal, vai pegar o form pelo id e colocar display none
 //se n tiver ninguem logado retorna pro login 
+
 
 
 button.onclick = async function() {
@@ -31,3 +53,4 @@ button.onclick = async function() {
         console.log(content.sql);
     }
 }
+

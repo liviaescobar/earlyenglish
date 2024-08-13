@@ -17,8 +17,24 @@ let button = document.getElementById("entrar");
 
         if(result.success) {
             console.log(result.data);
-            //salvar no localstorage
-            window.location.href = "index.html";
+            let tipoUsuario = result.data.tipo;
+            localStorage.setItem('tipo', tipoUsuario)           
+
+            if (tipoUsuario === "admin") {
+                // Não faz nada, o admin pode ver o formulário
+                window.location.href = "blog.html"; 
+            } else if (login === "normal") {
+                // Esconde o formulário para usuários normais
+                let form = document.getElementById("formPosts"); 
+                form.style.display = "none"
+                window.location.href = "blog.html"; 
+                
+            } else {
+                // Redireciona para a página de login se ninguém estiver logado
+                window.location.href = "login.html"; 
+            }
+
+            
         } else {
             alert(result.message);
         }
