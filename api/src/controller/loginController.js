@@ -3,7 +3,7 @@ const connection = require('../config/db');
 async function login(request, response) {
     const email = Array(request.body.email);
 
-    const query = "SELECT name, email, sexo, password, id, created_at FROM users WHERE email = ?"
+    const query = "SELECT name, email, sexo, password, id,tipo, created_at FROM users WHERE email = ?"
 
     connection.query(query, email, (err, results) => {
         console.log(err, results)
@@ -17,7 +17,7 @@ async function login(request, response) {
                 .json({
                     success: true,
                     message: "Sucesso",
-                    data: results
+                    data: results[0]
                 })
                 
         
