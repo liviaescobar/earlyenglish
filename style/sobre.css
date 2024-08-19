@@ -1,0 +1,52 @@
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 40px; 
+    background-color: #fff;
+    gap: 20px; 
+}
+
+.sobre-container {
+    max-width: 60%;
+    padding-left: 50px;
+}
+
+.sobre-container h2 {
+    color: #00b289;
+    font-size: 42px;
+    margin-bottom: 5px;
+    font-family: "Russo One";
+    font-weight: 1px;
+}
+
+.sobre-container p {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding-right: 5px;
+    font-family: "Raleway";
+}
+
+.logo-container {
+    flex: 0 1 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    width: 500px;
+    height: 500px;
+    background-color: #f78e1e;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo img {
+    width: 80%;
+    height: auto;
+}

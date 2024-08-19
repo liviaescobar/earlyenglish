@@ -1,0 +1,126 @@
+main {
+    padding: 140px 0 0 0;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+.conteudo1 {
+    max-width: 600px;
+}
+
+.conteudo1 h1 {
+    color: var(--verdeagua);
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-family: "Russo One";
+    font-weight: 300;
+}
+
+.conteudo1 p {
+    color: var(--cinza);
+    font-size: 25px;
+    line-height: 1.2;
+    font-family: "Raleway";
+    font-weight: 500;
+    text-align: justify;
+}
+
+.criancainicio img {
+    max-width: 100%;
+    width: 600px;
+    height: 600px;;
+    height: auto;
+    padding-left: 100px;
+    border-radius: 10px;
+}
+
+.informacoes-ingles {
+    background-color: var(--azul_claro);
+    padding: 50px 0;
+}
+
+.informacoes-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: var(--branco);
+    border-radius: 10px;
+}
+
+.imagem-crianca {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imagem-crianca img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    width: 600px; 
+    height: 600px;
+    background-color: var(--laranja);
+    padding: 10px;
+}
+
+
+.texto-informacoes {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.texto-informacoes h2 {
+    color: var(--laranja);
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-family: "Russo One";
+    font-weight: 400;
+}
+
+.texto-informacoes p {
+    color: var(--cinza);
+    font-size: 25px;
+    line-height: 1.2;
+    font-family: "Raleway";
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.botao_info{
+    padding-left: 200px;
+    padding-top: 5px;
+}
+
+.botao-cliqueaqui {
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Raleway";
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    text-decoration: none;
+}
+
+.botao-cliqueaqui:hover {
+    background-color: var(--laranja); 
+    transform: scale(1.1); 
+}
+
+
+

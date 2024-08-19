@@ -28,6 +28,10 @@ header {
     padding: 20px 40px;
     width: 93.75vw;
     height: 11vh;
+    position: fixed;
+    top: 0;
+    background-color: var(--branco); 
+    z-index: 1000; 
 }
 
 .logo img {
@@ -99,3 +103,6 @@ nav ul li a {
     background-color: var(--laranja);
 }
 
+main{
+    padding-top: 100px;
+}
