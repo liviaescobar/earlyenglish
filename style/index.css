@@ -1,3 +1,8 @@
+header{
+    position: fixed;
+}
+
+
 main {
     padding: 140px 0 0 0;
 }
@@ -96,8 +101,8 @@ main {
     text-align: justify;
 }
 
-.botao_info{
-    padding-left: 200px;
+.botao_info {
+    padding-left: 190px;
     padding-top: 5px;
 }
 
@@ -107,6 +112,7 @@ main {
     font-size: 20px;
     padding: 15px 30px;
     border: none;
+    width: 150px;
     border-radius: 5px;
     cursor: pointer;
     font-family: "Raleway";
@@ -115,12 +121,11 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: background-color 0.3s ease, transform 0.3s ease; 
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 .botao-cliqueaqui:hover {
-    background-color: var(--laranja); 
+    background-color: rgb(167, 72, 35); 
     transform: scale(1.1); 
 }
-
-
-

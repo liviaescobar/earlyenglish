@@ -28,7 +28,6 @@ header {
     padding: 20px 40px;
     width: 93.75vw;
     height: 11vh;
-    position: fixed;
     top: 0;
     background-color: var(--branco); 
     z-index: 1000; 
@@ -105,4 +104,22 @@ nav ul li a {
 
 main{
     padding-top: 100px;
+}
+
+.saudacao{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--laranja)
+}
+
+#botaoSair{
+    color: var(--branco);
+    border: none;
+    background-color: var(--verdeagua);
+    border-radius: 10px;
+    width: 60px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
 }

@@ -1,3 +1,7 @@
+header{
+    position: fixed;
+}
+
 input[type="text"],
     select,
     textarea {
@@ -17,6 +21,8 @@ input[type="text"],
     width: 100%;
     flex-direction: column;
     gap: 40px;
+    padding-top: 90px;
+
 }
 
 .quadro {
@@ -39,6 +45,7 @@ input[type="text"],
     justify-content: center;
     align-items: center;
     margin-left: 650px;
+    padding-top: 60px;
 }
 
 .postar label, .postar input {

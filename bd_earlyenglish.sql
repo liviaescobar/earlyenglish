@@ -4,9 +4,9 @@ use earlyenglish;
 
 create table blog(
 	id int auto_increment primary key,
-    titulo text not null,
-    autor text not null,
-    conteudo text,
+    titulo longtext not null,
+    autor longtext not null,
+    conteudo longtext,
     created_ate TIMESTAMP DEFAULT current_timestamp
 );
 

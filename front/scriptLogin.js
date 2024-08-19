@@ -18,8 +18,10 @@ let button = document.getElementById("entrar");
         if(result.success) {
             console.log(result.data);
             let tipoUsuario = result.data.tipo;
-            localStorage.setItem('tipo', tipoUsuario)           
-
+            localStorage.setItem('login', tipoUsuario)     
+            let nomeUsuario = result.data.name;
+            localStorage.setItem('nome', nomeUsuario)           
+            
             if (tipoUsuario === "admin") {
                 // Não faz nada, o admin pode ver o formulário
                 window.location.href = "blog.html"; 
