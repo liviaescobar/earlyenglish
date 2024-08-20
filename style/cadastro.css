@@ -1,14 +1,15 @@
 .form-container{
     display: flex;
     justify-content: space-around;
-    padding: 90px 100px;
+    padding: 2px 200px;
     font-size: 20px;
+    margin-top: 0;
+    
 }
 
 .cadastrar{
     width: 500px;
     height: 70px;
-    margin-top: 15px;
 }
 
 #facalogin{
@@ -17,11 +18,15 @@
     font-weight: 600;
 }
 
+.imagem_cadastro{
+    padding-left: 40px;
+    padding-top: 1px;
+}
+
 .imagem_cadastro img{
     width: 30vw;
     height: 70vh;
 }
-
 
 input[type="text"],
 input[type="email"],
@@ -54,6 +59,20 @@ button[type=button]{
     font-size: 20px;
 }
 
-.possuirconta{
-    text-align: center
+.inicio_cad{
+    padding-left: 250px;
+}
+
+.cadastre-se {
+    color: orange; /* Cor laranja */
+    font-size: 35px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 10px; /* Espaço abaixo do h1 */
+    text-align: left; 
+}
+
+.possuirconta {
+    text-align: left;
+    font-size: 19px;
+    color: var(--cinza); /* Cor cinza */
 }

@@ -1,8 +1,9 @@
 .form-container_login {
     display: flex;
     justify-content: space-around;
-    padding: 160px 100px;
     font-size: 20px;
+    padding-left: 110px;
+
 }
 
 input[type="email"],
@@ -61,6 +62,21 @@ label {
     color: var(--cinza);
 }
 
+.inicio_log{
+    padding-left: 250px;
+    padding-bottom: 2px;
+}
+
+.login-se {
+    color: orange; /* Cor laranja */
+    font-size: 35px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 10px; /* Espaço abaixo do h1 */
+    text-align: left; 
+}
+
 .possuirconta {
-    text-align: center;
+    text-align: left;
+    font-size: 19px;
+    color: var(--cinza); /* Cor cinza */
 }
