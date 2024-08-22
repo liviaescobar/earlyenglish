@@ -1,26 +1,5 @@
 let button = document.getElementById("enviar");
 
-window.onload = function() {
-    let login = localStorage.getItem("login");
-
-    console.log("Valor de login no localStorage:", login);
-
-    if (login === "admin") {
-        // Não faz nada, o admin pode ver o formulário
-       
-    } else if (login === "normal") {
-        // Esconde o formulário para usuários normais
-        let form = document.getElementById("formPosts"); 
-        form.style.display = "none"
-
-        
-    } else {
-        // Redireciona para a página de login se ninguém estiver logado
-        window.location.href = "login.html"; 
-    }
-};
-
-
 button.onclick = async function() {
     let titulo = document.getElementById("titulo").value;
     let autor = document.getElementById("autor").value;

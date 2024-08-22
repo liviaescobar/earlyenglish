@@ -5,24 +5,28 @@ header{
 input[type="text"],
     select,
     textarea {
-        border: 2px solid var(--azul_claro);
+        border: 3px solid var(--azul_claro);
         border-radius: 30px;
-        font-size: 15px;
+        font-size: 18px;
         padding: 10px;
         margin-bottom: 30px; 
         width: 31vw; 
-        box-sizing: border-box;
+        box-sizing: border-box;        
     }
+
 
 .posts {
     display: flex;
-    justify-content:center;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center;
     width: 100%;
-    flex-direction: column;
-    gap: 40px;
-    padding-top: 90px;
+    gap: 250px; /* Espaçamento entre os itens */
+    padding-top: 40px;
+    
+}
 
+.posts {
+    flex: 1 1 calc(90% - 40px); /* Aumenta a largura para 60% */
 }
 
 .quadro {
@@ -34,8 +38,19 @@ input[type="text"],
     text-align: center;
 }
 
+
+.titulo{
+    font-size: 30px;
+    text-align: justify;
+}
+.autor{
+    font-size: 25px;
+    font-style: italic
+}
+
 .conteudo {
     text-align: justify;
+    font-size: 21px;
 }
 
 .postar {
@@ -56,6 +71,8 @@ input[type="text"],
     align-items: center;
     margin-bottom: 40px;
 }
+
+
 
 #enviar{
     background-color: #e9aa6c;
