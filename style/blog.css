@@ -1,90 +1,99 @@
-header{
+/* Define a posição fixa para o cabeçalho, que ficará fixo no topo da página */
+header {
     position: fixed;
 }
 
+/* Estiliza os campos de entrada do tipo texto, selects e textareas */
 input[type="text"],
-    select,
-    textarea {
-        border: 3px solid var(--azul_claro);
-        border-radius: 30px;
-        font-size: 18px;
-        padding: 10px;
-        margin-bottom: 30px; 
-        width: 31vw; 
-        box-sizing: border-box;        
-    }
-
-
-.posts {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    justify-content: center;
-    width: 100%;
-    gap: 250px; /* Espaçamento entre os itens */
-    padding-top: 40px;
-    
+select,
+textarea {
+    border: 3px solid var(--azul_claro); /* Define a borda como sólida, com a cor azul clara */
+    border-radius: 20px; /* Arredonda os cantos da borda */
+    font-size: 22px; /* Define o tamanho da fonte */
+    padding: 12px; /* Adiciona espaçamento interno */
+    margin-bottom: 30px; /* Adiciona espaçamento inferior */
+    width: 45vw; /* Define a largura como 31% da largura da viewport */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
 }
 
+/* Estiliza a classe .posts para exibir uma galeria de posts */
 .posts {
-    flex: 1 1 calc(90% - 40px); /* Aumenta a largura para 60% */
+    display: flex; /* Usa flexbox para layout flexível */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não couberem em uma linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+    gap: 250px; /* Define o espaçamento entre os itens */
+    padding-top: 20px; /* Adiciona espaçamento superior */
 }
 
+/* Redefine a largura dos itens dentro da classe .posts */
+.posts {
+    padding: 0 50 2px;
+}
+
+/* Estiliza a classe .quadro que é usada para criar um quadro ao redor dos posts */
 .quadro {
-    background-color: var(--rosa);
-    border: 4px solid var(--verdeagua);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    text-align: center;
+    background-color: var(--rosa); /* Define a cor de fundo como rosa */
+    border: 4px solid var(--verdeagua); /* Define a borda como sólida com a cor verde água */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 20px; /* Arredonda os cantos da borda */
+    max-width: 570px; /* Define a largura máxima do quadro */
+    text-align: center; /* Centraliza o texto dentro do quadro */
 }
 
-
-.titulo{
-    font-size: 30px;
-    text-align: justify;
-}
-.autor{
-    font-size: 25px;
-    font-style: italic
+/* Estiliza o título dos posts */
+.titulo {
+    font-size: 30px; /* Define o tamanho da fonte */
+    text-align: justify; /* Justifica o texto */
 }
 
+/* Estiliza o autor dos posts */
+.autor {
+    font-size: 25px; /* Define o tamanho da fonte */
+    font-style: italic; /* Define o estilo da fonte como itálico */
+}
+
+/* Estiliza o conteúdo dos posts */
 .conteudo {
-    text-align: justify;
-    font-size: 21px;
+    text-align: justify; /* Justifica o texto */
+    font-size: 21px; /* Define o tamanho da fonte */
 }
 
+/* Estiliza a área onde se pode postar conteúdo */
 .postar {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 650px;
-    padding-top: 60px;
+    display: flex; /* Usa flexbox para layout flexível */
+    flex-direction: column; /* Organiza os itens em coluna */
+    width: 200px; /* Define a largura da área de postagem */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-left: 750px; /* Adiciona espaçamento à esquerda */
+    padding-top: 80px; /* Adiciona espaçamento superior */
 }
 
+/* Estiliza os labels e inputs dentro da área de postagem */
 .postar label, .postar input {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adiciona espaçamento inferior */
+    font-size: 22px;
 }
+
+/* Estiliza o botão dentro da área de postagem */
 .postar button {
-    margin-top: 10px;
-    align-items: center;
-    margin-bottom: 40px;
+    margin-top: 10px; /* Adiciona espaçamento superior */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 40px; /* Adiciona espaçamento inferior */
 }
 
-
-
-#enviar{
-    background-color: #e9aa6c;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-color: #e9aa6c ;
-    border-radius: 15px;
-    margin-left: 10px;
-    height: 5h;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: 550;
-    color: white;
-    font-family: "Raleway", sans-serif;
+#enviar {
+    background-color: #e9aa6c; /* Define a cor de fundo */
+    padding: 15px 25px; /* Adiciona espaçamento interno */
+    cursor: pointer; /* Define o cursor como uma mão quando passa sobre o botão */
+    border-color: #e9aa6c; /* Define a cor da borda */
+    border-radius: 15px; /* Arredonda os cantos da borda */
+    margin-left: 10px; /* Adiciona espaçamento à esquerda */
+    font-size: 20px; /* Define o tamanho da fonte */
+    text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado */
+    font-weight: 550; /* Define o peso da fonte */
+    font-style: italic;
+    color: black; /* Define a cor do texto como branco */
+    font-family: "Raleway", sans-serif; /* Define a família de fontes */
 }

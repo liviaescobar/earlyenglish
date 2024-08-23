@@ -1,39 +1,55 @@
+// Adiciona um ouvinte de evento que será executado quando o DOM estiver completamente carregado
 document.addEventListener('DOMContentLoaded', async () => {
+    // Faz uma solicitação para obter os dados do blog do servidor
+    // A palavra-chave 'async' permite que usemos 'await' dentro desta função
     const response = await fetch('http://localhost:3005/api/get/blog');
+    
+    // Converte a resposta da solicitação para formato JSON
     const result = await response.json();
 
+    // Verifica se a solicitação foi bem-sucedida
     if(result.success){
+        // Seleciona o elemento HTML com a classe 'posts', onde os posts do blog serão adicionados
         const blogList = document.querySelector('.posts');
+
+        // Itera sobre cada item no array 'result.data', que contém os dados dos posts do blog
         result.data.forEach(blog => {
+            // Cria um novo elemento <div> para representar um post do blog
             const bloggeral = document.createElement('div');
-            bloggeral.className = 'blog';
+            bloggeral.className = 'blog'; // Define a classe para estilização
 
+            // Cria um novo elemento <div> para servir como contêiner do post do blog
             const quad = document.createElement('div');
-            quad.className = 'quadro';
+            quad.className = 'quadro'; // Define a classe para estilização
 
+            // Cria um novo elemento <h1> para o título do post
             const titulo = document.createElement('h1');
-            titulo.className = 'titulo';
-            titulo.textContent = blog.titulo;
+            titulo.className = 'titulo'; // Define a classe para estilização
+            titulo.textContent = blog.titulo; // Define o texto do título como o título do blog
 
+            // Cria um novo elemento <p> para o autor do post
             const autor = document.createElement('p');
-            autor.className = 'autor';
-            autor.textContent = blog.autor;
+            autor.className = 'autor'; // Define a classe para estilização
+            autor.textContent = blog.autor; // Define o texto do autor como o autor do blog
 
+            // Cria um novo elemento <p> para o conteúdo do post
             const conteudo = document.createElement('p');
-            conteudo.className = 'conteudo';
-            conteudo.textContent = blog.conteudo;
+            conteudo.className = 'conteudo'; // Define a classe para estilização
+            conteudo.textContent = blog.conteudo; // Define o texto do conteúdo como o conteúdo do blog
 
-
+            // Adiciona o título, o autor e o conteúdo ao contêiner do post
             quad.appendChild(titulo);
             quad.appendChild(autor);
             quad.appendChild(conteudo);
 
+            // Adiciona o contêiner do post ao elemento principal do blog
             bloggeral.appendChild(quad);
 
+            // Adiciona o post do blog ao elemento que contém todos os posts
             blogList.appendChild(bloggeral);
-
         })
-    }else{
-        console.log("Erro", result.sql)
+    } else {
+        // Se a solicitação não for bem-sucedida, exibe um erro no console
+        console.log("Erro", result.sql);
     }
-}); 
+});
