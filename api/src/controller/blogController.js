@@ -1,3 +1,5 @@
+// Gerencia posts do blog.
+
 // Importa a conexão com o banco de dados do módulo de configuração
 const connection = require('../config/db');
 

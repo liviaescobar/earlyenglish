@@ -1,3 +1,5 @@
+// Inicia o servidor.
+
 // Importar o arquivo app
 const app = require('./app');
 // Importar a porta do servidor

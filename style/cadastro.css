@@ -1,88 +1,78 @@
-/* Estiliza o contêiner que envolve os formulários */
-.form-container {
-    display: flex; /* Usa flexbox para layout flexível */
-    justify-content: space-around; /* Distribui o espaço igualmente ao redor dos itens */
-    padding: 0 200px; /* Adiciona espaçamento interno de 2px no topo e na base, e 200px nas laterais */
-    font-size: 20px; /* Define o tamanho da fonte */
-    margin-top: 0; /* Remove qualquer margem superior */
+.form-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 200px;
+    font-size: 20px;
+    margin-top: 0;
+    
 }
 
-/* Define a largura e altura do contêiner para cadastro */
-.cadastrar {
-    width: 500px; /* Define a largura do contêiner */
-    height: 70px; /* Define a altura do contêiner */
+.cadastrar{
+    width: 500px;
+    height: 70px;
 }
 
-/* Estiliza o link com o ID "facalogin" */
-#facalogin {
-    text-decoration: none; /* Remove a decoração padrão do link, como o sublinhado */
-    color: var(--azul_claro); /* Define a cor do texto como a cor azul clara definida em variáveis CSS */
-    font-weight: 600; /* Define o peso da fonte como 600, o que equivale a negrito */
+#facalogin{
+    text-decoration: none;
+    color: var(--azul_claro);
+    font-weight: 600;
 }
 
-/* Estiliza o contêiner que envolve a imagem de cadastro */
-.imagem_cadastro {
-    padding-left: 40px; /* Adiciona espaçamento interno à esquerda */
-    padding-top: 1px; /* Adiciona espaçamento interno no topo */
+.imagem_cadastro{
+    padding-left: 40px;
+    padding-top: 1px;
 }
 
-/* Define o tamanho da imagem dentro do contêiner ".imagem_cadastro" */
-.imagem_cadastro img {
-    width: 30vw; /* Define a largura da imagem como 30% da largura da viewport */
-    height: 70vh; /* Define a altura da imagem como 70% da altura da viewport */
+.imagem_cadastro img{
+    width: 30vw;
+    height: 70vh;
 }
 
-/* Estiliza campos de entrada e seleção */
 input[type="text"],
 input[type="email"],
 input[type="password"],
-select,
-textarea {
-    border: 2px solid var(--azul_claro); /* Define a borda como sólida, com a cor azul clara */
-    border-radius: 30px; /* Arredonda os cantos da borda */
-    font-size: 15px; /* Define o tamanho da fonte */
-    padding: 10px; /* Adiciona espaçamento interno */
-    margin-bottom: 30px; /* Adiciona espaçamento inferior */
-    width: 31vw; /* Define a largura como 31% da largura da viewport */
-    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+    select,
+    textarea {
+        border: 2px solid var(--azul_claro);
+        border-radius: 30px;
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 30px; 
+        width: 31vw; 
+        box-sizing: border-box;
+    }
+
+label{
+    margin-bottom: 7px;
+    padding: 4px;
+    font-weight: 450;
+    color: var(--cinza);
 }
 
-/* Estiliza os rótulos dos campos de formulário */
-label {
-    margin-bottom: 7px; /* Adiciona espaçamento inferior */
-    padding: 4px; /* Adiciona espaçamento interno */
-    font-weight: 450; /* Define o peso da fonte */
-    color: var(--cinza); /* Define a cor do texto como cinza */
+button[type=button]{
+    color: var(--branco);
+    background-color: var(--azul_claro);
+    border: none;
+    border-radius: 40px;
+    width: 31vw;
+    height: 4.5vh;
+    font-size: 20px;
 }
 
-/* Estiliza os botões do tipo "button" */
-button[type=button] {
-    color: var(--branco); /* Define a cor do texto como branco */
-    background-color: var(--azul_claro); /* Define a cor de fundo como azul clara */
-    border: none; /* Remove a borda padrão do botão */
-    border-radius: 40px; /* Arredonda os cantos da borda do botão */
-    width: 31vw; /* Define a largura do botão como 31% da largura da viewport */
-    height: 4.5vh; /* Define a altura do botão como 4.5% da altura da viewport */
-    font-size: 20px; /* Define o tamanho da fonte */
+.inicio_cad{
+    padding-left: 250px;
 }
 
-/* Alinha o contêiner ".inicio_cad" à esquerda */
-.inicio_cad {
-    padding-left: 250px; /* Adiciona espaçamento interno à esquerda */
-}
-
-/* Estiliza o título da página de cadastro */
 .cadastre-se {
-    color: orange; /* Define a cor do texto como laranja */
-    font-size: 35px; /* Define o tamanho da fonte */
-    font-weight: bold; /* Define o peso da fonte como negrito */
-    margin-bottom: 10px; /* Adiciona espaçamento inferior */
-    text-align: left; /* Alinha o texto à esquerda */
+    color: orange; /* Cor laranja */
+    font-size: 35px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 10px; /* Espaço abaixo do h1 */
+    text-align: left; 
 }
 
-/* Estiliza a mensagem sobre possuir uma conta */
 .possuirconta {
-    text-align: left; /* Alinha o texto à esquerda */
-    font-size: 19px; /* Define o tamanho da fonte */
-    color: var(--cinza); /* Define a cor do texto como cinza */
+    text-align: left;
+    font-size: 19px;
+    color: var(--cinza); /* Cor cinza */
 }

@@ -1,3 +1,5 @@
+// Configura a aplicação Express e registra as rotas.
+
 // Importa o módulo Express para criar a aplicação e gerenciar rotas
 const express = require('express');
 

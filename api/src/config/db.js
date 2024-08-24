@@ -1,3 +1,5 @@
+// Configura a conexão com o banco de dados.
+
 // Importar o pacote do mysql
 const mysql = require('mysql2');
 

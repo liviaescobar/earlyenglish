@@ -1,26 +1,3 @@
-// Quando a página é carregada, o código abaixo é executado
-window.onload = function() {
-    // Obtém o valor armazenado no localStorage com a chave "login"
-    let login = localStorage.getItem("login");
-
-    // Mostra o valor de "login" no console para depuração
-    console.log("Valor de login no localStorage:", login);
-
-    // Verifica se o valor de "login" é null ou uma string vazia
-    if (login === null || login.trim() === "") {
-        // Se não houver valor ou o valor estiver vazio, redireciona para a página de login
-        window.location.href = "login.html";
-    } else if (login === "admin") {
-        // Se o valor for "admin", não faz nada, permitindo que o admin veja o formulário
-    } else if (login === "normal") {
-        // Se o valor for "normal", esconde o formulário para o usuário normal
-        let form = document.getElementById("formPosts");
-        if (form) {
-            form.style.display = "none"; // Esconde o formulário
-        }
-    }
-};
-
 // Quando a página é carregada, o código abaixo é executado novamente
 window.onload = function() {
     // Obtém o valor armazenado no localStorage com as chaves "login" e "nome"
@@ -58,5 +35,24 @@ window.onload = function() {
         if (botoesCadastroLogin) {
             botoesCadastroLogin.innerHTML = ""; // Limpa o conteúdo desse elemento
         }
+
+
+        if (login === "normal") {
+            // Se o valor for "normal", esconde o formulário para o usuário normal
+            let form = document.getElementById("formPosts");
+            if (form) {
+                form.style.display = "none"; // Esconde o formulário
+            }
+        }
+
+    } else {
+        // Divide a URL atual em partes, usando '/' como delimitador, e armazena cada parte em um array
+        const url = window.location.href.split('/')
+        
+        // Verifica se a última parte da URL (o nome da página atual) é 'blog.html'
+        if(url[url.length - 1] === 'blog.html'  )
+            // Se a condição for verdadeira, redireciona o usuário para a página de login
+            window.location.href = "login.html";
+
     }
 };

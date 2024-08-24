@@ -23,7 +23,7 @@ textarea {
     justify-content: center; /* Centraliza os itens horizontalmente */
     width: 100%; /* Define a largura como 100% do contêiner pai */
     gap: 250px; /* Define o espaçamento entre os itens */
-    padding-top: 20px; /* Adiciona espaçamento superior */
+    padding-top: 70px; /* Adiciona espaçamento superior */
 }
 
 /* Redefine a largura dos itens dentro da classe .posts */

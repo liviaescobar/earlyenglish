@@ -1,3 +1,5 @@
+// Rota para criação de usuários.
+
 // Importa o módulo Router do pacote Express para criar um novo roteador
 const { Router } = require('express');
 

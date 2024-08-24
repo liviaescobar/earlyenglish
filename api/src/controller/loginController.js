@@ -1,3 +1,5 @@
+// Trata da autenticação de usuários.
+
 // Importa a conexão com o banco de dados do módulo de configuração
 const connection = require('../config/db');
 

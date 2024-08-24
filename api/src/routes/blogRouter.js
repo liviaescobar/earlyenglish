@@ -1,3 +1,5 @@
+// Rotas relacionadas ao blog.
+
 // Importa o módulo Router do pacote Express para criar um novo roteador
 const { Router } = require('express');
 
