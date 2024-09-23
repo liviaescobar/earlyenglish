@@ -37,10 +37,49 @@ document.addEventListener('DOMContentLoaded', async () => {
             conteudo.className = 'conteudo'; // Define a classe para estilização
             conteudo.textContent = blog.conteudo; // Define o texto do conteúdo como o conteúdo do blog
 
-            // Adiciona o título, o autor e o conteúdo ao contêiner do post
+
+           // Cria o botão de editar
+           const editButton = document.createElement('button');
+           editButton.textContent = 'Editar';
+           editButton.className = 'edit-button';
+        
+
+            // Cria o botão de excluir
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Excluir';
+            deleteButton.className = 'delete-button'
+
+            // Adiciona o ouvinte de evento para o botão de editar
+            editButton.addEventListener('click', () => {
+                // Função para editar o post
+                console.log(`Editar post ID: ${blog.id}`);
+                // Aqui você pode abrir um modal ou permitir edição inline
+            });
+
+            // Adiciona o ouvinte de evento para o botão de excluir
+            deleteButton.addEventListener('click', async () => {
+                // Função para excluir o post
+                console.log(`Excluir post ID: ${blog.id}`);
+                // Fazer uma requisição para o backend para excluir o post
+                const deleteResponse = await fetch(`http://localhost:3005/api/delete/blog/${blog.id}`, {
+                    method: 'DELETE'
+                });
+
+                const deleteResult = await deleteResponse.json();
+                if (deleteResult.success) {
+                    blogList.removeChild(bloggeral); // Remove o post da página
+                } else {
+                    console.log('Erro ao excluir:', deleteResult.message);
+                }
+            });
+
+            // Adiciona o título, autor, conteúdo e botões ao contêiner
             quad.appendChild(titulo);
             quad.appendChild(autor);
             quad.appendChild(conteudo);
+            quad.appendChild(editButton);
+            quad.appendChild(deleteButton);
+
 
             // Adiciona o contêiner do post ao elemento principal do blog
             bloggeral.appendChild(quad);
