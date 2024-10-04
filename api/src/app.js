@@ -9,6 +9,10 @@ const cors = require('cors');
 // Importa o módulo dotenv para carregar variáveis de ambiente do arquivo .env
 const dotenv = require('dotenv').config();
 
+const path = require("path");
+const fs = require("fs");
+const fileUpload = require("express-fileupload");
+
 // Importa os roteadores definidos para gerenciar diferentes partes da aplicação
 const blogRouter = require('./routes/blogRouter');
 const usersRouter = require('./routes/usersRouter');
@@ -25,6 +29,8 @@ app.use(express.json());
 
 // Configura a aplicação para usar o middleware cors(), que permite que recursos sejam compartilhados entre diferentes origens
 app.use(cors());
+
+app.use(fileUpload());
 
 // Configura as rotas para o caminho '/api'. Associa os roteadores importados a esse caminho
 app.use('/api', blogRouter);

@@ -32,6 +32,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             autor.className = 'autor'; // Define a classe para estilização
             autor.textContent = blog.autor; // Define o texto do autor como o autor do blog
 
+            const arquivo = document.createElement('a');
+            arquivo.className = 'arquivo'; // Define a classe para estilização
+            arquivo.textContent = blog.arquivo; // Define o arquivo do blog
+
             // Cria um novo elemento <p> para o conteúdo do post
             const conteudo = document.createElement('p');
             conteudo.className = 'conteudo'; // Define a classe para estilização
@@ -76,6 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Adiciona o título, autor, conteúdo e botões ao contêiner
             quad.appendChild(titulo);
             quad.appendChild(autor);
+            quad.appendChild(arquivo);
             quad.appendChild(conteudo);
             quad.appendChild(editButton);
             quad.appendChild(deleteButton);

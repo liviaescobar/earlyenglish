@@ -1,36 +1,65 @@
 // Gerencia posts do blog.
 
-// Importa a conexão com o banco de dados do módulo de configuração
 const connection = require('../config/db');
-
-// Importa e carrega as variáveis de ambiente do arquivo .env
 const dotenv = require('dotenv').config();
+const fs = require("fs");
+const path = require("path");
 
-// Função assíncrona para armazenar um novo blog no banco de dados
+const uploadPath = path.join(__dirname, '..', 'uploads');
+
+if(!fs.existsSync(uploadPath)){
+    fs.mkdirSync(uploadPath);
+}
+
 async function storeBlog(request, response) {
-    const params = Array(
-        request.body.titulo,    // Título do blog, obtido do corpo da requisição
-        request.body.autor,     // Autor do blog, obtido do corpo da requisição
-        request.body.conteudo   // Conteúdo do blog, obtido do corpo da requisição
-    );
-    
-    const query = "INSERT INTO blog(titulo, autor, conteudo) VALUES(?, ?, ?)";
-    
-    connection.query(query, params, (err, results) => {
-        if (results) {
-            response.status(200).json({
-                success: true,
-                message: "Sucesso!",
-                data: results
-            });
-        } else {
-            response.status(400).json({
-                success: false,
-                message: "Erro!",
-                sql: err
-            });
+console.log("aqui")
+console.log(request)
+    if(!request.files){
+        return response.status(400).json({
+            success: false, 
+            message: "Você não enviou o arquivo"
+        });
+    }
+
+    const arquivo = request.files.arquivo;
+    const arquivoNome = Date.now() + path.extname(arquivo.name);
+
+    arquivo.mv(path.join(uploadPath, arquivoNome), (erro) => {
+        if (erro){
+            return response.status(400).json({
+                success: false, 
+                message: "Erro ao mover o arquivo"
+            })
         }
+
+        const params = Array(
+            request.body.titulo,    // Título do blog, obtido do corpo da requisição
+            request.body.autor,     // Autor do blog, obtido do corpo da requisição
+            request.body.conteudo,   // Conteúdo do blog, obtido do corpo da requisição
+            arquivoNome
+        );
+
+
+        const query = "INSERT INTO blog(titulo, autor, conteudo, arquivo) VALUES(?, ?, ?, ?)";
+
+        connection.query(query, params, (err, results) => {
+            if (results) {
+                response.status(200).json({
+                    success: true,
+                    message: "Sucesso!",
+                    data: results
+                });
+            } else {
+                response.status(400).json({
+                    success: false,
+                    message: "Erro!",
+                    sql: err
+                });
+            }
+        });
+
     });
+
 }
 
 // Função assíncrona para obter todos os blogs do banco de dados

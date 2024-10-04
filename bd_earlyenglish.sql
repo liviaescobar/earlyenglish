@@ -7,6 +7,7 @@ create table blog(
     titulo longtext not null,
     autor longtext not null,
     conteudo longtext,
+    arquivo VARCHAR(20),
     created_ate TIMESTAMP DEFAULT current_timestamp
 );
 

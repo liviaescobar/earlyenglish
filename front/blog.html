@@ -32,7 +32,7 @@
         </div>
     </header>
     <main>
-        <form class="postar" action="#" id="formPosts">
+        <form class="postar" action="#" id="formPosts" enctype="multipart/form-data">
            <label for="titulo"> Título: </label>
            <input type="text" id="titulo" name="titulo">     
            
@@ -41,6 +41,9 @@
 
            <label for="conteudo"> Conteúdo: </label>
            <input type="text" id="conteudo" name="conteudo">  
+
+           <label for="arquivo"> Arquivo: </label>
+           <input type="file" id="arquivo" name="arquivo">  
 
            <button id="enviar" type="button"> ENVIAR </button>
        </form>
