@@ -34,9 +34,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const arquivo = document.createElement('a');
             arquivo.className = 'arquivo'; // Define a classe para estilização
-            arquivo.textContent = blog.arquivo; // Define o arquivo do blog
+            arquivo.textContent = "Baixar PDF"; // Define o arquivo do blog
 
-            arquivo.href = "./src/uploads" + blog.arquivo; //Caminho para o arquivo
+            arquivo.href = "http://localhost:3005/uploads/" + blog.arquivo; //Caminho para o arquivo
+            arquivo.target = "_blank" 
             arquivo.download = blog.arquivo; // Define o nome do arquivo para download
 
             // Cria um novo elemento <p> para o conteúdo do post

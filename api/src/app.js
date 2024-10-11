@@ -30,6 +30,8 @@ app.use(express.json());
 // Configura a aplicação para usar o middleware cors(), que permite que recursos sejam compartilhados entre diferentes origens
 app.use(cors());
 
+app.use('/uploads', express.static(__dirname + '\\uploads'));
+
 app.use(fileUpload());
 
 // Configura as rotas para o caminho '/api'. Associa os roteadores importados a esse caminho
