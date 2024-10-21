@@ -15,3 +15,79 @@ body {
     margin-bottom: 20px;
 }
 
+
+
+main {
+    padding: 30px;
+}
+
+.container_info {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f7941d;
+    font-family: "Russo One";
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.painel {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.painel-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.painel-item:last-child {
+    border-bottom: none;
+}
+
+.painel-button {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.painel-button:after {
+    content: '\25bc'; /* seta para baixo */
+    font-size: 16px;
+}
+
+.painel-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0 15px;
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+}
+
+.painel-content p {
+    padding: 15px 0;
+}
+
+.painel-button.active:after {
+    content: '\25b2'; /* seta para cima */
+}
+
+.painel-button.active + .painel-content {
+    max-height: 150px;
+    padding: 15px;
+}
