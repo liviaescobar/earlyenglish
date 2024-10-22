@@ -29,7 +29,7 @@ main {
 h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #f7941d;
+    color: var(--laranja);
     font-family: "Russo One";
     font-weight: 300;
     font-size: 40px;
@@ -51,19 +51,21 @@ h1 {
 }
 
 .painel-button {
+    font-family: "Raleway", sans-serif;
     width: 100%;
     text-align: left;
     padding: 15px;
-    background-color: #f7941d;
+    background-color: var(--laranja);
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     outline: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 500;
 }
 
 .painel-button:after {
@@ -71,7 +73,7 @@ h1 {
     font-size: 16px;
 }
 
-.painel-content {
+.painel-conteudo {
     max-height: 0;
     overflow: hidden;
     background-color: #fff;
@@ -79,7 +81,7 @@ h1 {
     transition: max-height 0.2s ease-out, padding 0.2s ease-out;
 }
 
-.painel-content p {
+.painel-conteudo p {
     padding: 15px 0;
 }
 
@@ -87,7 +89,7 @@ h1 {
     content: '\25b2'; /* seta para cima */
 }
 
-.painel-button.active + .painel-content {
+.painel-button.active + .painel-conteudo {
     max-height: 150px;
     padding: 15px;
 }
