@@ -10,5 +10,27 @@ body {
 
 .metodologias h1 {
     text-align: center;
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #007bff;
     margin-bottom: 20px;
+}
+
+.metodologia-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ajusta o layout em telas menores */
+}
+
+.metodologia-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.metodologia-text {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 500px;
 }
