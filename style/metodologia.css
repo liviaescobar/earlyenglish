@@ -1,36 +1,51 @@
+:root {
+    --laranja: #F28E29;
+    --azul_escuro: #252641;
+    --azul_claro: #76AADE;
+    --cinza: #444B59;
+    --amarelinho: #F7FFC7;
+    --branco: #FFFFFF;
+    --verdeagua: #46C1AD;
+    --rosa: #FFEBEB;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
 
 .container {
-    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Estilo da seção Metodologias */
 .metodologias h1 {
-    text-align: center;
-    font-size: 2.5rem; /* Tamanho do título */
-    color: #007bff;
-    margin-bottom: 20px;
+    text-align: left; /* Alinhando o título à esquerda */
+    margin-left: 60px; /* Ajuste conforme necessário para posicionar corretamente */
+    font-family: "Russo One";
+    font-size: 85px;
+    font-weight: 300;
+    color: var(--verdeagua);
+    margin-bottom: 30px; /* Ajuste da margem inferior */
 }
 
 .metodologia-content {
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Ajusta o layout em telas menores */
+    gap: 50px; /* Ajustando o espaçamento entre imagem e texto */
+    justify-content: flex-start; /* Mantendo alinhado à esquerda */
+    padding-left: 60px; /* Ajustando a posição geral */
 }
 
 .metodologia-content img {
-    width: 200px;
+    width: 400px; /* Ajustando a largura da imagem */
     height: auto;
-    border-radius: 8px;
 }
 
 .metodologia-text {
-    font-size: 1.2rem;
+    font-size: 18px; /* Ajustando o tamanho do texto */
     color: #333;
+    max-width: 500px; /* Definindo a largura do texto */
     line-height: 1.6;
-    max-width: 500px;
+    text-align: justify; /* Justificar o texto para melhor leitura */
 }
