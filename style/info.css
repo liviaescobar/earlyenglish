@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+
+:root {
+    --laranja: #F28E29;
+    --laranjinha: #FFD1A3; 
+    --azul_escuro: #252641;
+    --azul_claro: #76AADE;
+    --cinza: #444B59;
+    --amarelinho: #F7FFC7;
+    --branco: #FFFFFF;
+    --verdeagua: #46C1AD;
+    --rosa: #FFEBEB;
+}
+
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -31,8 +45,8 @@ h1 {
     margin-bottom: 40px;
     color: var(--laranja);
     font-family: "Russo One";
-    font-weight: 300;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 60px;
 }
 
 .painel {

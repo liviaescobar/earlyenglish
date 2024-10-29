@@ -49,3 +49,7 @@ body {
     line-height: 1.6;
     text-align: justify; /* Justificar o texto para melhor leitura */
 }
+
+.video-container{
+    gap: 30px;
+}
