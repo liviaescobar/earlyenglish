@@ -129,3 +129,74 @@ main {
     background-color: rgb(167, 72, 35); 
     transform: scale(1.1); 
 }
+
+.metodologias {
+    padding: 50px 0;
+}
+
+.metodologias-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.texto-metodologias {
+    flex: 1;
+    margin-right: 80px;
+    font-family: "Raleway", sans-serif;
+}
+
+.texto-metodologias h2 {
+    font-size: 40px;
+    color: var(--verdeagua);
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.texto-metodologias p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.descricao {
+    font-size: 20px;
+    color: var(--verdeagua);
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: "Russo One", sans-serif;
+}
+
+.botao-aprenda-aqui {
+    display: inline-block;
+    background-color: var(--verdeagua);
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-aprenda-aqui:hover {
+    background-color: var(--verdeagua);
+    transform: scale(1.05);
+}
+
+.imagem-metodologias {
+    flex: 1;
+    text-align: center;
+}
+
+.imagem-metodologias img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
