@@ -49,6 +49,7 @@ button.onclick = async function() {
             if (form) {
                 form.style.display = "none"; // Esconde o formulário
             }
+ 
             window.location.href = "blog.html";
         } else {
             // Se o tipo de usuário não for reconhecido, redireciona para a página de login

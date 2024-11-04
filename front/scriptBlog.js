@@ -7,12 +7,6 @@ button.onclick = async function() {
     let form = document.getElementById("formPosts");
     let dadosForm = new FormData(form);
 
-    // let titulo = document.getElementById("titulo").value; 
-    // let autor = document.getElementById("autor").value;   
-    // let conteudo = document.getElementById("conteudo").value; 
-
-    // let dados = {titulo, autor, conteudo};
-
     // O pedido é do tipo POST, o que significa que estamos enviando dados para o servidor
     const response = await fetch("http://localhost:3005/api/store/blog", {
         method: "POST", // Define que estamos usando o método POST para enviar dados
