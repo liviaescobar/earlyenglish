@@ -51,13 +51,11 @@ document.addEventListener('DOMContentLoaded', async () => {
            //editButton.textContent = 'Editar';
            //editButton.className = 'edit-button';
         
-
             // Cria o botão de excluir
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Excluir';
-            deleteButton.className = 'delete-button'
+            deleteButton.textContent = 'EXCLUIR';
+            deleteButton.className = 'delete-button';
 
-           
 
             // Adiciona o ouvinte de evento para o botão de editar
             editButton.addEventListener('click', () => {
@@ -80,10 +78,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
 
                 const deleteResult = await deleteResponse.json();
-                if (deleteResult.success) {
-                    blogList.removeChild(bloggeral); // Remove o post da página
+                const confirmDelete = confirm('Você tem certeza que quer apagar?');
+
+                // Se o usuário clicar em "Sim" (confirmar), a exclusão é executada
+                if (confirmDelete) {
+                    // Aqui você coloca o código para realizar a exclusão
+                    if (deleteResult.success) {
+                        blogList.removeChild(bloggeral); // Remove o post da página
+                    } else {
+                        console.log('Erro ao excluir:', deleteResult.message);
+                    }
+                    alert('Item excluído');
                 } else {
-                    console.log('Erro ao excluir:', deleteResult.message);
+                    // Se o usuário clicar em "Não", a função termina sem fazer nada
+                    alert('Item não excluido') // Ou você pode simplesmente não fazer nada aqui, pois a execução é interrompida
                 }
             });
 

@@ -16,6 +16,7 @@ textarea {
     box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
 }
 
+
 /* Estiliza a classe .posts para exibir uma galeria de posts */
 .posts {
     display: flex; /* Usa flexbox para layout flexível */
@@ -83,22 +84,27 @@ textarea {
     margin-bottom: 40px; /* Adiciona espaçamento inferior */
 }
 
-#enviar {
-    background-color: #e9aa6c; /* Define a cor de fundo */
-    padding: 15px 25px; /* Adiciona espaçamento interno */
-    cursor: pointer; /* Define o cursor como uma mão quando passa sobre o botão */
-    border-color: #e9aa6c; /* Define a cor da borda */
-    border-radius: 15px; /* Arredonda os cantos da borda */
-    margin-left: 10px; /* Adiciona espaçamento à esquerda */
-    font-size: 20px; /* Define o tamanho da fonte */
-    text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado */
-    font-weight: 550; /* Define o peso da fonte */
-    font-style: italic;
-    color: black; /* Define a cor do texto como branco */
-    font-family: "Raleway", sans-serif; /* Define a família de fontes */
+#enviar{
+    color: black;
+    border: none;
+    background-color: var(--azul_claro);
+    border-radius: 10px;
+    width: 100px;
+    height: 36px;
+    font-size: 19px;
+    font-weight: 300px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.arquivo {
-    border: 10px;
-
+.delete-button{
+    color: var(--branco);
+    border: none;
+    background-color: rgb(214, 2, 2);
+    border-radius: 7px;
+    width: 80px;
+    height: 26px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
 }

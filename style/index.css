@@ -141,6 +141,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 
 .texto-metodologias {
@@ -150,33 +151,36 @@ main {
 }
 
 .texto-metodologias h2 {
-    font-size: 40px;
+    font-size: 55px;
     color: var(--verdeagua);
     font-family: "Russo One", sans-serif;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .texto-metodologias p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
     margin-bottom: 15px;
     text-align: justify;
+}
+
+.dica{
+    color: var(--cinza);
 }
 
 .descricao {
     font-size: 20px;
     color: var(--verdeagua);
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 20px;
-    font-family: "Russo One", sans-serif;
+    
 }
 
 .botao-aprenda-aqui {
     display: inline-block;
     background-color: var(--verdeagua);
     color: var(--branco);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     padding: 15px 30px;
     border-radius: 5px;
@@ -196,7 +200,7 @@ main {
 }
 
 .imagem-metodologias img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 15px;
 }
