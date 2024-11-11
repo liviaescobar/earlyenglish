@@ -11,7 +11,7 @@ input[type="password"],
 select,
 textarea {
     border: 2px solid var(--azul_claro);
-    border-radius: 30px;
+    border-radius: 25px;
     font-size: 15px;
     padding: 10px;
     width: 31vw; 
@@ -31,7 +31,7 @@ input[type="password"] {
     color: var(--branco);
     background-color: var(--azul_claro);
     border: none;
-    border-radius: 40px;
+    border-radius: 30px;
     width: 31vw;
     height: 7vh;
     font-size: 20px;
@@ -41,7 +41,9 @@ input[type="password"] {
 .cadastrar_login {
     width: 500px;
     height: 70px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin: 10px;
+    gap: 30px;
 }
 
 #facacadastro {
@@ -53,6 +55,7 @@ input[type="password"] {
 .imagem_cadastro img {
     width: 30vw;
     height: 70vh;
+    margin-top: -200px;
 }
 
 label {

@@ -6,6 +6,7 @@
     --amarelinho: #F7FFC7;
     --branco: #FFFFFF;
     --verdeagua: #46C1AD;
+    --verdeclarinho: #a8ece1;
     --rosa: #FFEBEB;
 }
 
@@ -14,42 +15,64 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    padding: 20px;
+    margin: auto;
 }
 
-/* Estilo da seção Metodologias */
 .metodologias h1 {
-    text-align: left; /* Alinhando o título à esquerda */
-    margin-left: 60px; /* Ajuste conforme necessário para posicionar corretamente */
-    font-family: "Russo One";
-    font-size: 85px;
-    font-weight: 300;
+    text-align: center;
+    font-size: 90px;
     color: var(--verdeagua);
-    margin-bottom: 30px; /* Ajuste da margem inferior */
+    font-family: "Russo One";
+    font-weight: 400;
+    margin-top: -50px;
+    margin-right: -900px;
 }
 
 .metodologia-content {
     display: flex;
     align-items: center;
-    gap: 50px; /* Ajustando o espaçamento entre imagem e texto */
-    justify-content: flex-start; /* Mantendo alinhado à esquerda */
-    padding-left: 60px; /* Ajustando a posição geral */
+    justify-content: center;
+    text-align:justify;
+    margin: 190px 0;
+    font-size: 20px;
+    margin-top: -60px;
+    margin-bottom: 50px;
+    
 }
 
-.metodologia-content img {
-    width: 400px; /* Ajustando a largura da imagem */
-    height: auto;
+.metodologia-imagem {
+    width: 750px;
+    margin-right: 150px;
+    margin-top: -120px;
 }
 
 .metodologia-text {
-    font-size: 18px; /* Ajustando o tamanho do texto */
+    max-width: 600px;
+    font-size: 1em;
     color: #333;
-    max-width: 500px; /* Definindo a largura do texto */
     line-height: 1.6;
-    text-align: justify; /* Justificar o texto para melhor leitura */
 }
 
-.video-container{
-    gap: 30px;
+.metodologia-text p {
+    margin: 0;
+}
+
+.video-section {
+    background-color: var(--verdeclarinho); 
+    border-radius: 15px;
+    padding: 50px;
+    margin: 20px auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-rows: repeat(3, 1fr); /* 3 linhas */
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.video-container iframe {
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
 }

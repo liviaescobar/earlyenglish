@@ -4,7 +4,10 @@
     padding: 2px 200px;
     font-size: 20px;
     margin-top: 0;
-    
+}
+
+.container{
+    margin-top: -70px;
 }
 
 .cadastrar{
@@ -26,6 +29,7 @@
 .imagem_cadastro img{
     width: 30vw;
     height: 70vh;
+    margin-top: -70px;
 }
 
 input[type="text"],
