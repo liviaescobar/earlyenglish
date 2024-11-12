@@ -31,11 +31,12 @@ input[type="password"] {
     color: var(--branco);
     background-color: var(--azul_claro);
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     width: 31vw;
     height: 7vh;
     font-size: 20px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .cadastrar_login {

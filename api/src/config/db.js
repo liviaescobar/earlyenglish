@@ -10,7 +10,7 @@ const dotenv = require('dotenv').config();
 const connection = mysql.createConnection({
     host: process.env.DB_HOST, // Define o host do banco de dados, recuperado das variáveis de ambiente
     user: process.env.DB_USER, // Define o usuário do banco de dados, recuperado das variáveis de ambiente
-    password: process.env.DB_PASSWORD, // Define a senha do banco de dados, recuperada das variáveis de ambiente
+    //password: process.env.DB_PASSWORD, // Define a senha do banco de dados, recuperada das variáveis de ambiente
     database: process.env.DB_DATABASE, // Define o nome do banco de dados, recuperado das variáveis de ambiente
 });
 
