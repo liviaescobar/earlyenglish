@@ -36,6 +36,7 @@ main {
 .container_info {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: -40px;
 }
 
 h1 {

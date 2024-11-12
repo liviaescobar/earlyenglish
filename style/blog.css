@@ -30,6 +30,8 @@ textarea {
 /* Redefine a largura dos itens dentro da classe .posts */
 .posts {
     padding: 0 50 2px;
+    gap: 140px;
+    
 }
 
 /* Estiliza a classe .quadro que é usada para criar um quadro ao redor dos posts */
@@ -38,7 +40,7 @@ textarea {
     border: 4px solid var(--verdeagua); /* Define a borda como sólida com a cor verde água */
     padding: 20px; /* Adiciona espaçamento interno */
     border-radius: 20px; /* Arredonda os cantos da borda */
-    max-width: 570px; /* Define a largura máxima do quadro */
+    max-width: 600px; /* Define a largura máxima do quadro */
     text-align: center; /* Centraliza o texto dentro do quadro */
 }
 
@@ -107,4 +109,10 @@ textarea {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.arquivo{
+    color: var(--verdeagua);
+    font-weight: 650;
+    font-size: 20px;    
 }
