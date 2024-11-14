@@ -1,19 +1,25 @@
 // Gerencia posts do blog.
 
-const connection = require('../config/db');
-const dotenv = require('dotenv').config();
-const fs = require("fs");
-const path = require("path");
+const connection = require('../config/db'); // Conexão com o banco de dados
+const dotenv = require('dotenv').config(); // Carrega variáveis de ambiente do arquivo .env
+const fs = require("fs");  // Importa módulo para manipulação de arquivos
+const path = require("path"); // Importa módulo para manipulação de caminhos
 
+
+// Define o caminho onde os arquivos enviados serão salvos
 const uploadPath = path.join(__dirname, '..', 'uploads');
 
+// Verifica se o diretório de uploads existe; caso contrário, cria
 if(!fs.existsSync(uploadPath)){
     fs.mkdirSync(uploadPath);
 }
 
+// Função assíncrona para armazenar um post do blog
 async function storeBlog(request, response) {
 console.log("aqui")
 console.log(request)
+
+    // Verifica se arquivos foram enviados na requisição
     if(!request.files){
         return response.status(400).json({
             success: false, 
@@ -21,9 +27,10 @@ console.log(request)
         });
     }
 
-    const arquivo = request.files.arquivo;
-    const arquivoNome = Date.now() + path.extname(arquivo.name);
+    const arquivo = request.files.arquivo;  // Obtém o arquivo enviado
+    const arquivoNome = Date.now() + path.extname(arquivo.name); // Define um nome único para o arquivo
 
+    // Move o arquivo para o diretório de uploads
     arquivo.mv(path.join(uploadPath, arquivoNome), (erro) => {
         if (erro){
             return response.status(400).json({
@@ -32,11 +39,12 @@ console.log(request)
             })
         }
 
+        // Parâmetros para inserção no banco de dados
         const params = Array(
             request.body.titulo,    // Título do blog, obtido do corpo da requisição
             request.body.autor,     // Autor do blog, obtido do corpo da requisição
             request.body.conteudo,   // Conteúdo do blog, obtido do corpo da requisição
-            arquivoNome
+            arquivoNome              // Nome do arquivo
         );
 
 
