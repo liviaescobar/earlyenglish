@@ -118,8 +118,19 @@ main {
     font-family: "Raleway";
     font-weight: 700;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra ao elemento para criar uma sensação de profundidade
+      - `0`: Deslocamento horizontal da sombra (não se move para os lados).
+      - `4px`: Deslocamento vertical da sombra (move-se 4px para baixo).
+      - `6px`: Raio de desfoque (quanto maior, mais suave será a sombra).
+      - `rgba(0, 0, 0, 0.1)`: Cor da sombra em preto com 10% de opacidade (quase transparente).
+    */
+    
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Define transições suaves para alterações no elemento:
+      - `background-color 0.3s ease`: Transição de cor de fundo com duração de 0.3 segundos e efeito suave (ease).
+      - `transform 0.3s ease`: Transição para transformações no elemento (como escala ou rotação), também com 0.3 segundos de duração e suavidade.
+    */
     text-decoration: none;
     display: flex;
     justify-content: center;

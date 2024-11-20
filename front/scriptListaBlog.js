@@ -48,21 +48,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
            // Cria o botão de editar
            const editButton = document.createElement('p'); //está aqui apenas para não apagar o bloco do post (?)
-           //editButton.textContent = 'Editar';
-           //editButton.className = 'edit-button';
         
             // Cria o botão de excluir
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'EXCLUIR';
             deleteButton.className = 'delete-button';
-
-
-            // Adiciona o ouvinte de evento para o botão de editar
-            editButton.addEventListener('click', () => {
-                // Função para editar o post
-                console.log(`Editar post ID: ${blog.id}`);
-                // Aqui você pode abrir um modal ou permitir edição inline
-            });
 
             if(localStorage.getItem('login') == 'normal') {
                 deleteButton.style.display = 'none';

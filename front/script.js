@@ -36,7 +36,6 @@ window.onload = function() {
             botoesCadastroLogin.innerHTML = ""; // Limpa o conteúdo desse elemento
         }
 
-
         if (login === "normal") {
             // Se o valor for "normal", esconde o formulário para o usuário normal
             let form = document.getElementById("formPosts");
